@@ -1,12 +1,12 @@
-
+import React from 'react';
 import './App.css';
-import React from '../components/Header';
+import Header from './components/Header';
 function App() {
   return (
     <div className='app'>
-      <h1>Hello clever Pro</h1>
-      {/*Header*/}
       <Header />
+      {/*Header*/}
+      
       {/*Home*/}
     </div>
 )
