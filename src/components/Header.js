@@ -4,6 +4,8 @@ import logo from '../imgs/logo.png'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import flag from '../imgs/USA-flag.png'
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 function Header() {
   return (
       <div className='header'>
@@ -33,15 +35,23 @@ function Header() {
 
       <div className='country_option'>
         <img src={flag}></img>
+        <ArrowDropDownOutlinedIcon/>
       </div>
 
-          <div  className='info-section'>
-           <span className='account-name' >Hello, Sign in</span>
-          <span className='account-wallet'>XXXXXXXX</span>
+          <div  className='info_section'>
+           <span className='account_name' >Hello, Sign in</span>
+          <span className='account_wallet'>XXXXXXXX</span>
         </div> 
          
-      
+        <div  className='purchase_section'>
+           <span className='recent' >Recent</span>
+          <span className='trans'>Transaction</span>
+        </div> 
 
+      <div className='pending_trans'>
+        <ShoppingCartOutlinedIcon/>
+      </div>
+      
       </div>
   )
 }

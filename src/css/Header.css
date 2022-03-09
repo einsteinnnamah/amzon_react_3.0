@@ -21,7 +21,6 @@
 
 .location{
     display: flex;
-    font-size: 13px;
     align-items: center;
     color: white;
     margin-right: 1rem;
@@ -31,16 +30,15 @@
 .location_items span{
     display: flex;
     align-items: center;
-    letter-spacing: 0.5px;
 }
 
 
 .location_deliver{
-    font-weight: 400;
+    font-size: 14px;
 }
 
 .location_country{
-    font-weight: 700;
+    font-size: 13px;
 
 }
 
@@ -74,19 +72,56 @@
 
 .country_option{
     margin-left: 30px;
+    display: flex;
+    color: white;
+    cursor: pointer;
 }
 
 .country_option img{
     height: 20px;
 }
 
-.info-section{
+.info_section{
     color: white;
 }
 
-.info-section span{
+.info_section span{
     display: flex;
     margin-left: 20px;
-    font-size: 12px;
+}
+
+.account_name{
+    font-size: 14px;
+}
+
+.account_wallet{
+    font-size: 13px;
+}
+
+
+.purchase_section{
+    color: white;
+}
+
+.purchase_section span{
+    display: flex;
+    margin-left: 20px;
+}
+
+.recent{
+    font-size: 14px;
+}
+
+.trans{
+    font-size: 13px;
+}
+
+.pending_trans{
+    color: white;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
 }
 
