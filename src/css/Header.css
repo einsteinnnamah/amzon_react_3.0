@@ -15,6 +15,7 @@
     cursor: pointer;
     height: 2rem;
     margin: 2rem;
+    object-fit: contain;
     
 }
 
@@ -52,11 +53,19 @@
 }
 
 .search_option input{
- 
-    border-radius: 4px;
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 70%;
+    border-radius: 5px 0px 0px 5px;
+    
 }
 
 .search_icon{
     background: #cd9042;
- 
+    padding: 5px;
+    height: 22px !important;
+    border-radius: 0px 5px 5px 0px;
+
+
 }

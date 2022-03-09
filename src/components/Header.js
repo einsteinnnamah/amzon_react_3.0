@@ -24,7 +24,7 @@ function Header() {
         </div>
       
       <div className='search_option'>
-        <input className='header_searchInput' type='text' placeholder='Search items'></input>
+        <input className='header_searchInput' type='text' placeholder='Search NFTs'></input>
         <div className='search_icon'>
           <SearchOutlinedIcon />
         </div>
