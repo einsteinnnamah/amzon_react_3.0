@@ -3,7 +3,7 @@ import '../css/Header.css'
 import logo from '../imgs/logo.png'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-
+import flag from '../imgs/USA-flag.png'
 function Header() {
   return (
       <div className='header'>
@@ -16,7 +16,7 @@ function Header() {
         <div className='location_icon'>
           <LocationOnOutlinedIcon />
         </div>
-        <div className='location_items'>
+        <div  className='location_items'>
            <span className='location_deliver' >Deliver to</span>
           <span className='location_country'>Nigeria</span>
         </div> 
@@ -31,6 +31,16 @@ function Header() {
         
       </div>
 
+      <div className='country_option'>
+        <img src={flag}></img>
+      </div>
+
+          <div  className='info-section'>
+           <span className='account-name' >Hello, Sign in</span>
+          <span className='account-wallet'>XXXXXXXX</span>
+        </div> 
+         
+      
 
       </div>
   )
