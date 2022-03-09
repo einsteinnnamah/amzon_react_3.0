@@ -1,37 +1,36 @@
 import React from 'react'
 import '../css/Header.css'
+import logo from '../imgs/logo.png'
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 function Header() {
   return (
       <div className='header'>
-      <img className='header_logo' src='../src/imgs/logo.png'></img>
 
-        <div className='header_option'>
-          <span className='header_optionLine1'>Deliver to</span>
-          <span>Nigeria</span>
+        <img className='logo_img' src={logo}></img>
+
+
+      <div className='location'>
+
+        <div className='location_icon'>
+          <LocationOnOutlinedIcon />
+        </div>
+        <div className='location_items'>
+           <span className='location_deliver' >Deliver to</span>
+          <span className='location_country'>Nigeria</span>
+        </div> 
+         
         </div>
       
-      <div className='header_search'>
-        <input className='header_searchInput' type='text' >
-        </input>
+      <div className='search_option'>
+        <input className='header_searchInput' type='text' placeholder='Search items'></input>
+        <div className='search_icon'>
+          <SearchOutlinedIcon />
+        </div>
+        
       </div>
 
-      <div className='header_nav'>
-        <div className='header_option'>
-          <img src=''></img>
-        </div>
-        
-        <div className='header_option'>
-          <span className='header_optionLine1'>Returning</span>
-          <span>& Orders</span>
-          
-        </div>
-        
-        <div className='header_option'>
-           <span className='header_optionLine1'>Your</span>
-          <span>Prime</span>
-          </div>
-      </div>
 
       </div>
   )
