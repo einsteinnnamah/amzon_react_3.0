@@ -6,11 +6,15 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import flag from '../imgs/USA-flag.png'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
+
 function Header() {
   return (
       <div className='header'>
 
+      <a href='#'>
         <img className='logo_img' src={logo}></img>
+      </a>
+    
 
 
       <div className='location'>
