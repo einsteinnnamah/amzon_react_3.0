@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {ThirdwebWeb3Provider} from '@3rdweb/hooks'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
 
 
 const supportedChainIds = [4]
@@ -20,4 +20,4 @@ function MyApp({ component, pageProps }) {
     )
 }
 
-export default _app
+export default MyApp;

@@ -8,15 +8,14 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 
 function Header() {
+  
   return (
       <div className='header'>
 
       <a href='#'>
-        <img className='logo_img' src={logo}></img>
+        <img className='logo_img' src={logo} alt=""></img>
       </a>
     
-
-
       <div className='location'>
 
         <div className='location_icon'>
@@ -38,7 +37,7 @@ function Header() {
       </div>
 
       <div className='country_option'>
-        <img src={flag}></img>
+        <img src={flag} alt=""></img>
         <ArrowDropDownOutlinedIcon/>
       </div>
 

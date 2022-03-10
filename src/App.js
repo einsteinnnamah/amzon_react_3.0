@@ -1,19 +1,21 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Home from './components/Home';
-function App() {
+import Hero from './components/Hero';
+
+function header() {
+  
   return (
     <div className='wrapper'>
        {/*Header*/}
       <Header />
      
       {/*Home*/}
-      <Home />
+      <Hero />
     </div>
 )
 
 
 }
 
-export default App;
+export default header;
