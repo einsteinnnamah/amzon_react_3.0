@@ -2,20 +2,38 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Metamask from './components/Metamask'
+import { useState } from 'react';
+import Login from './components/Login'
 
-function header() {
-  
+
+function app() {
+
+  const [isConnected, setIsConnected] = useState(false);
+
+  const onLogin = () => {
+    setIsConnected(true);
+  }
+
+  const onLogout = () => {
+    setIsConnected(false);
+  }
+
   return (
-    <div className='wrapper'>
-       {/*Header*/}
-      <Header />
-     
-      {/*Home*/}
-      <Hero />
+    <div className='app'>
+      {!isConnected && <Login onLogin={onLogin} onLogout={onLogout} /> }
+      {isConnected && <Header />}
+      {isConnected && <Hero />}
     </div>
-)
+        
 
+ )
+
+  
 
 }
 
-export default header;
+
+export default app;
+
+
