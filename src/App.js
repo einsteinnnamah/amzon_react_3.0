@@ -11,7 +11,7 @@ function app() {
 
   const [isConnected, setIsConnected] = useState(false);
 
-  const onLogin = () => {
+  const onLogin = (provider) => {
     setIsConnected(true);
   }
 

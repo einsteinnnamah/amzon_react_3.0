@@ -1,10 +1,10 @@
 import React from 'react'
-
-
-
-
+import { useState } from 'react';
 
 const login = (props) => {
+
+    const [isConnecting, setIsConnecting] = useState(false);
+
     const detectProvider = () => {
         let provider;
         if (window.ethereum) {
@@ -12,7 +12,7 @@ const login = (props) => {
         } else if (window.web3) {
             provider = window.web3.currentProvider;
         } else {
-            window.alert("No Ethereum browser detected! Check out MetaMask");
+            window.alert("No wallet detected! Check out https://MetaMask.com");
         }
         return provider;
             
@@ -25,10 +25,12 @@ const login = (props) => {
             if (provider !== window.ethereum) {
                 console.error("Not window.ethereum provider. Do you have a multiple wallet installed ?")
             }
+            setIsConnecting(true);
             await provider.request({
                 method: "eth_requestAccounts"
             });
-             props.onLogin();
+            setIsConnecting(false);
+             props.onLogin(provider);
         }
            
         };
@@ -38,7 +40,10 @@ const login = (props) => {
 
   return (
       <div className='login'>
-          <button onClick={onLoginHandler}>Connect Metamask</button> 
+          <button onClick={onLoginHandler}>
+              {!isConnecting && "Connect Metamask"}
+              {isConnecting && "Loading...."}
+          </button> 
           <p>NB: You must have a Metamask account to access the App!</p>
       </div>
   )
