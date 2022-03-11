@@ -7,7 +7,7 @@ import flag from '../imgs/USA-flag.png'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 
-function Header() {
+const Header = (props) => {
   
   return (
       <div className='header'>
@@ -43,7 +43,7 @@ function Header() {
 
           <div  className='info_section'>
            <span className='account_name' >Hello, Sign in</span>
-          <span className='account_wallet'>XXXXXXXX</span>
+        <span className='account_wallet'>{props.currentAccount}</span>
         </div> 
          
         <div  className='purchase_section'>
